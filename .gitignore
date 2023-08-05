@@ -20,6 +20,7 @@ bld/
 # CMake
 CMakeCache.txt
 CMakeFiles
+cmake-build-debug-visual-studio
 CMakeScripts
 Makefile
 cmake_install.cmake
