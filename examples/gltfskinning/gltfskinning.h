@@ -192,7 +192,7 @@ class VulkanExample : public VulkanExampleBase
   public:
 	bool wireframe = false;
 
-	struct ShaderData
+	struct UniformData
 	{
 		vks::Buffer buffer;
 		struct Values

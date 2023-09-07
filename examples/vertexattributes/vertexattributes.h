@@ -96,7 +96,7 @@ public:
 	// Index buffer for all primitives of the scene
 	vks::Buffer indices;
 
-	struct ShaderData {
+	struct UniformData {
 		vks::Buffer buffer;
 		struct Values {
 			glm::mat4 projection;

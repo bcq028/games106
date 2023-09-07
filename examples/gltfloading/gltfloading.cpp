@@ -385,7 +385,7 @@ public:
 
 	VulkanglTFModel glTFModel;
 
-	struct ShaderData {
+	struct UniformData {
 		vks::Buffer buffer;
 		struct Values {
 			glm::mat4 projection;

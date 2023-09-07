@@ -31,7 +31,7 @@ public:
 		vks::Buffer skybox;
 	} uniformBuffers;
 
-	struct ShaderData {
+	struct UniformData {
 		glm::mat4 projection;
 		glm::mat4 modelView;
 		glm::mat4 inverseModelview;
@@ -463,14 +463,14 @@ public:
 			VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
 			VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT,
 			&uniformBuffers.object,
-			sizeof(ShaderData)));
+			sizeof(UniformData)));
 
 		// Skybox vertex shader uniform buffer
 		VK_CHECK_RESULT(vulkanDevice->createBuffer(
 			VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
 			VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT,
 			&uniformBuffers.skybox,
-			sizeof(ShaderData)));
+			sizeof(UniformData)));
 
 		// Map persistent
 		VK_CHECK_RESULT(uniformBuffers.object.map());

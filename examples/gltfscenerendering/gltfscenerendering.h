@@ -137,7 +137,7 @@ class VulkanExample : public VulkanExampleBase
 public:
 	VulkanglTFScene glTFScene;
 
-	struct ShaderData {
+	struct UniformData {
 		vks::Buffer buffer;
 		struct Values {
 			glm::mat4 projection;
